@@ -8,5 +8,7 @@ import springBoot.bank_Project.model.Account;
 
 @Repository
 public interface AccountRepository extends JpaRepository<Account, Long> {
+	
 	public Account findByAccNo(long accNo);
+	
 }
